@@ -8,18 +8,46 @@ var generateBtn = document.querySelector("#generate");
 
 function userInput() {
   userArray = [];
-  var passwordLength = parseInt (prompt('Pick a number between 8 and 128'));
+  passwordLength = parseInt (prompt('Pick a number between 8 and 128'));
   if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
     alert('You must pick a number between 8 and 128');
     return false;
   }
   if (confirm('Would you like to include lower case?')) {
     userArray = userArray.concat(lowerCase);
+    console.log(userArray)
   }
-  
+  if (confirm('Would you like to include upper case?')) {
+    userArray = userArray.concat(upperCase);
+    console.log(userArray)
+  }
+  if (confirm('Would you like to include numbers?')) {
+    userArray = userArray.concat(numbers);
+    console.log(userArray)
+  }
+  if (confirm('Would you like to include special characters?')) {
+    userArray = userArray.concat(special);
+    console.log(userArray)
+  }
+  return true;
+
+
 }
+
+function generatePassword() {
+  var generatedPassword = "";
+  for(var i = 0; i < passwordLength; i ++) {
+    var randomCharacters = Math.floor(Math.random() * userArray.length);
+    generatedPassword = generatedPassword + userArray[randomCharacters];
+  }
+  return generatedPassword;
+  console.log(generatedPassword)
+}
+
+
 // Write password to the #password input
 function writePassword() {
+  var userPromt = userInput();
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
