@@ -8,4 +8,6 @@ Here I was given a starter code and was asked to refactor the given code to make
  https://jpick77.github.io/Password-Generator/
 
  # Screenshot of Code and website
- 
+ ![Alt text](./images/password.pic.1.png "password.pic.1.png")
+ ![Alt text](./images/password.pic.2.png "password.pic.2.png")
+ ![Alt text](./images/password.pic.3.png "password.pic.3.png")
