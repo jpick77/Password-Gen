@@ -7,7 +7,7 @@ Here I was given a starter code and was asked to refactor the given code to make
 Used javaScript to add difrrent variables for the password.
 
 # Link to Deployed Page
-
+https://jpick77.github.io/Unique-Password-Generator/
 
 # Screenshot of Code and website
 <!-- ![Alt text](./assets/images/screen.shot.14.png "scree.shot.14.png")
